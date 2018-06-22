@@ -1,0 +1,21 @@
+.screen
+	padding: 45px 0 75px
+	&-title
+		margin: 0 auto 60px
+		width: auto
+		text-align: center
+		font-family: $proxima
+		+fs(33)
+		font-weight: 600
+		color: $blue-dark
+		&__content
+			display: inline
+			vertical-align: middle
+			+pseudo
+			&::before
+				top: auto
+				bottom: 0
+				width: 100%
+				height: 4px
+				+g(#3d163b, #872c4c)
+				opacity: .25

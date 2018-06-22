@@ -1,0 +1,56 @@
+.screen-features
+	&__features
+
+
+.features
+	&-row
+		display: flex
+	&-col
+		display: flex
+		flex-direction: column
+		box-sizing: border-box
+		&_img
+			overflow: hidden
+			img
+				object-fit: cover
+				width: 100%
+				height: 100%	
+		&_text
+			justify-content: center
+			min-height: 210px
+			padding: 25px
+			font-family: $proxima
+			+fs(22)
+			font-weight: 300
+			color: $dark
+		&_hero
+			flex-basis: 60%
+			justify-content: center
+			align-items: center
+			padding: 25px
+			text-align: center
+			font-family: $proxima
+			+fs(26)
+			font-weight: 400
+			color: $light
+			+image('cor-gradient-bg.jpg')
+			+cover
+			+pseudo
+			&-content
+				position: relative
+				z-index: 2
+			&::before
+				z-index: 1
+				width: 100%
+				height: 100%
+				background-color: rgba($purp-dark, .7)
+		&_47
+			width: 47%
+		&_43
+			width: 43%
+		&_29
+			width: 29%
+		&_28
+			width: 28%
+		&_24
+			width: 24%
