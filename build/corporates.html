@@ -13,24 +13,31 @@
     <header class="header">
       <div class="container">
         <a href="#" class="header-logo">
-          <img src="img/header-logo.png" alt=""> </a>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-list-li">
-              <a href="#services" class="haeder-nav-list-li__link">Услуги</a>
-            </li>
-            <li class="header-nav-list-li">
-              <a href="#gallery" class="haeder-nav-list-li__link">Галерея</a>
-            </li>
-            <li class="header-nav-list-li">
-              <a href="#reviews" class="haeder-nav-list-li__link">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn btn-open-call" type="button">Заказать звонок</button>
-        <div class="header-info">
-          <div class="header-info__text">Работаем по всей Беларуси</div>
-          <a href="tel:+375456768787" class="haeder-info__link">Тел. +375(45)676-87-87</a>
+          <img class="header-logo__img" src="img/header-logo.png" alt=""> </a>
+        <button class="btn-mobile-menu">
+          <span class="lines"></span>
+        </button>
+        <div class="mobile-menu">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-list-li">
+                <a href="#services" class="header-nav-list-li__link link-smooth-to">Услуги</a>
+              </li>
+              <li class="header-nav-list-li">
+                <a href="#gallery" class="header-nav-list-li__link link-smooth-to">Галерея</a>
+              </li>
+              <li class="header-nav-list-li">
+                <a href="#reviews" class="header-nav-list-li__link link-smooth-to">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn btn-open-call" type="button">
+            <span class="btn__content">Заказать звонок</span>
+          </button>
+          <div class="header-info">
+            <div class="header-info__text">Работаем по всей Беларуси</div>
+            <a href="tel:+375456768787" class="header-info__link">Тел. +375(45)676-87-87</a>
+          </div>
         </div>
       </div>
     </header>
@@ -46,15 +53,17 @@
             <div class="container">
               <div class="hero-content-form__text">Получите эксклюзивное предложение на проведение вашего мероприятия</div>
               <form action="#" method="post" class="hero-content-form__form hero-form">
-                <input type="text" class="hero-form__input" name="name" placeholder="Введите имя*" required>
-                <input type="tel" class="hero-form__input" name="tel" placeholder="Введите номер телефона*" required>
-                <button type="submit" class="btn">Получить предложение!</button>
+                <input type="text" class="hero-form__input input" name="name" placeholder="Введите имя*" required>
+                <input type="tel" class="hero-form__input input" name="tel" placeholder="Введите номер телефона*" required>
+                <button type="submit" class="btn">
+                  <span class="btn__content">Получить предложение!</span>
+                </button>
               </form>
             </div>
           </div>
         </div>
         <div class="hero-video">
-          <video src="#" poster="img/video-poster.jpg" class="hero-video__video"></video>
+          <video src="video/video.mp4" poster="img/video-poster.jpg" class="hero-video__video" autoplay muted loop></video>
         </div>
       </section>
       <section class="screen screen-feature">
@@ -116,7 +125,9 @@
             <h2 class="service-top__title">Корпоративы</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-1.jpg" alt="" class="service-top-img__img"> </div>
@@ -125,7 +136,9 @@
             <h2 class="service-top__title">Бизнес-форумы</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-2.jpg" alt="" class="service-top-img__img"> </div>
@@ -145,7 +158,9 @@
             <h2 class="service-top__title">Концерты и фестивали</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-4.jpg" alt="" class="service-top-img__img"> </div>
@@ -154,7 +169,9 @@
             <h2 class="service-top__title">Выставки</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-5.jpg" alt="" class="service-top-img__img"> </div>
@@ -163,7 +180,9 @@
             <h2 class="service-top__title">Социальные проекты</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-6.jpg" alt="" class="service-top-img__img"> </div>
@@ -220,7 +239,9 @@
             <li class="cor-parralax-list">Мы разработаем для Вас сценарий, подберем артистов, подготовим реквизиты и оборудование</li>
             <li class="cor-parralax-list">В назначенный день мы проводим мероприятие, а Вы и Ваши гости получаете незабываемые впечатления!</li>
           </ol>
-          <button class="btn btn-open-calabration">Заказать праздник</button>
+          <button class="btn btn-open-calabration">
+            <span class="btn__content">Заказать праздник</span>
+          </button>
           <div class="cor-parralax__text">Не забудьте спросить менеджера про бонусы и подарки!</div>
         </div>
       </section>
@@ -308,42 +329,42 @@
         </div>
         <div class="gallery">
           <div class="gallery-item">
-            <img src="img/cor-call-1.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-1.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/cor-call-2.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-2.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/cor-call-3.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-3.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/cor-call-4.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-4.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/cor-call-5.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-5.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
             </div>
           </div>
           <div class="gallery-item">
-            <img src="img/cor-call-6.jpg" alt="" class="gallery-item__img">
+            <img src="img/cor-gall-6.jpg" alt="" class="gallery-item__img">
             <div class="gallery-item-overlay">
               <div class="gallery-item-overlay__text">Свадьба Алены и Станистава</div>
               <div class="gallery-item-overlay__text">23 июля 2016 года</div>
@@ -355,7 +376,9 @@
       <div class="screen screen-lid">
         <div class="container">
           <div class="screen-lid__title">Оставьте заявку</div>
-          <button class="btn btn-open-celebration" type="button">Заказать праздник</button>
+          <button class="btn btn-open-celebration" type="button">
+            <span class="btn__content">Заказать праздник</span>
+          </button>
           <div class="screen-lid__text">и получите
             <span class="bold">эксклюзивное предложение</span> для вашего лучшего праздника!</div>
         </div>
@@ -367,7 +390,9 @@
           <div class="container">
             <div class="screen-map-contacts__contacts"> Контактные данные компании </div>
             <a href="tel:+375293600909" class="screen-map-contacts__tel">Тел.: +375(29)360-09-09</a>
-            <button class="btn btn-open-call">Заказать звонок</button>
+            <button class="btn btn-open-call">
+              <span class="btn__content">Заказать звонок</span>
+            </button>
           </div>
         </div>
       </div>

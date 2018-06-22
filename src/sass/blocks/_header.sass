@@ -1,0 +1,85 @@
+.header
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 20
+	padding: 10px 0
+	width: 100%
+	text-align: center
+	background-color: $light
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&-logo
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 20px
+		padding-bottom: 5px
+		min-width: 145px
+		width: 145px
+		&__img
+			max-width: 100%
+			width: 100%
+			height: auto
+	&-nav
+		display: flex
+		justify-content: center
+		align-items: center
+		&-list
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin: 0
+			padding: 0
+			width: 100%
+			list-style: none
+			&-li
+				&__link
+					display: block
+					box-sizing: border-box
+					padding: 10px 25px
+					text-align: center
+					font-family: $proxima
+					+fs(22)
+					font-weight: 400
+					text-transform: uppercase
+					color: $blue-dark
+					text-decoration: none
+					transition: .25s
+					&:hover
+						color: $pink
+						text-decoration: none
+	&-info
+		text-align: center
+		&__text
+			text-align: center
+			font-family: $proxima
+			+fs(20)
+			font-weight: 700
+			color: $blue-dark
+		&__link
+			display: inline-block
+			vertical-align: middle
+			font-family: $proxima
+			+fs(22)
+			font-weight: 400
+			color: $blue-dark
+			text-decoration: none
+			transition: .25s
+			&:hover
+				color: $pink
+				text-decoration: none
+
+.mobile-menu
+	display: flex
+	justify-content: space-between
+	align-items: center
+	// padding-top: 20px
+	width: 100%
+
+.btn-mobile-menu
+	display: none
+
+

@@ -1,0 +1,31 @@
+.btn
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	box-sizing: border-box
+	padding: 12px 20px 10px
+	font-family: $proxima
+	+fs(18)
+	+lh(18, 18)
+	+ls(50)
+	font-weight: 400
+	text-transform: uppercase
+	color: $light
+	+g($grad-start, $grad-end)
+	transition: .25s
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		width: 100%
+		height: 100%
+		+g(darken($grad-start, 10), darken($grad-end, 10))
+		transition: .25s
+		opacity: 0
+	&__content
+		position: relative
+		z-index: 2
+	&:hover::before
+		opacity: 1

@@ -12,7 +12,7 @@ var config = {
         templates    : 'src/templates',
         templatesData: 'src/templates/data',
         pagelist     : 'src/index.yaml',
-        sass         : 'src/sass/**/*',
+        sass         : 'src/sass',
         // path for sass files that will be generated automatically via some of tasks
         sassGen      : 'src/sass/generated',
         js           : 'src/js',

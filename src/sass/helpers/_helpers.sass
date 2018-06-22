@@ -1,3 +1,6 @@
+@function perc($full, $perc)
+  @return ($perc * 100 / $full) + %
+
 @function em($size, $context: 16)
   @return ($size/$context) * 1em
 

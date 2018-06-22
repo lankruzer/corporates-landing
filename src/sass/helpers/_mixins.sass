@@ -27,7 +27,13 @@
     
 =fs($sizeValue: 16)
   font-size: $sizeValue + px
-  font-size: $sizeValue / 10 + rem
+  // font-size: $sizeValue / 10 + rem
+
+=lh($fontSize, $lineHeight)
+  line-height: $lineHeight / $fontSize
+
+=ls($letterSpacing)
+  letter-spacing: ($letterSpacing / 1000) + em 
 
 =text-overflow
   overflow: hidden
@@ -77,17 +83,17 @@
 
 //simple gradient
 =g($color1, $color2)
-  background-image: linear-gradient($color1, $color2)
+  background-image: linear-gradient(top, $color1, $color2)
 
 =gh($color1, $color2)
   background-image: linear-gradient(left, $color1, $color2)
 
 // font-family 
-=font($alias, $name)
+=font($alias, $name, $weight: normal)
   @font-face
     font-family: $alias
-    src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff")
-    font-weight: normal
+    src: url("../fonts/" + $name + ".eot?#iefix") format('embedded-opentype'), url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".woff") format("woff")
+    font-weight: $weight
     font-style: normal
     font-display: swap
 // to use:
