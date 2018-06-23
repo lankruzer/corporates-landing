@@ -1,7 +1,8 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 import '../js/link-smooth-scroll.js';
 import SmoothScroll from 'smoothscroll-for-websites';
 import Rellax from 'rellax';
+import slick from 'slick-carousel';
 
 
 SmoothScroll({ 
@@ -11,20 +12,20 @@ SmoothScroll({
 });
 
 var rellax = new Rellax('.cor-parralax_top .cor-parralax-rellax', {
-  // wrapper: '.cor-parralax_top',
-  speed: 2,
-  // center: true,
-  // round: true,
-  // vertical: true,
-  // horizontal: false
+  speed: 2
 });
 
 var rellax1 = new Rellax('.cor-parralax_bottom .cor-parralax-rellax', {
-  // wrapper: '.cor-parralax_bottom',
-  speed: 4,
-  // center: false,
-  // round: true,
-  // vertical: true,
-  // horizontal: false
+  speed: 4
+});
+
+$('.slider-reviews').slick({
+  // slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  centerMode: true,
+  variableWidth: true,
+  speed: 0
 });
 
