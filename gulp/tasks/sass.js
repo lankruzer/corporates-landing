@@ -9,7 +9,7 @@ var csso = require('postcss-csso');
 
 var processors = [
     autoprefixer({
-        browsers: ['last 4 versions'],
+        browsers: ['ie >= 11', 'last 4 versions'],
         cascade: false
     }),
     require('lost'),

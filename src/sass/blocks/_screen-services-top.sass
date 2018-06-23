@@ -1,0 +1,84 @@
+.screen-services-top
+	padding: 85px 0 85px
+	.container
+		padding: 0
+		display: flex
+		flex-wrap: wrap
+
+
+.service-top
+	position: relative
+	box-sizing: border-box
+	margin-bottom: 35px
+	padding: 0 15px
+	width: calc(100% / 3)
+	overflow: hidden
+	&-overlay
+		position: absolute
+		top: 0
+		left: 15px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: calc(100% - 30px)
+		height: 100%
+		background-color: rgba($purp-light, .6)
+		transition: .25s
+		&__text
+			margin-bottom: 10px
+			text-align: center
+			font-family: $proxima
+			+fs(28)
+			font-weight: 400
+			color: $light
+		.btn
+			width: calc(100% - 20px)
+			+fs(26)
+	&_top
+		.service-top-overlay
+			transform: translateY(-100%)
+		&:hover
+			.service-top-overlay
+				transform: translateY(0%)
+	&_bottom
+		display: flex
+		flex-direction: column
+		.service-top-overlay
+			transform: translateY(+100%)
+		&:hover
+			.service-top-overlay
+				transform: translateY(0%)
+	&__title
+		position: relative
+		z-index: 2
+		padding: 13px 10px
+		text-align: center
+		font-family: $agopus
+		+fs(25)
+		+ls(50)
+		font-weight: 400
+		text-transform: uppercase
+		color: $light
+		background-color: $purp
+	&-img
+		display: block
+		width: 100%
+		height: 100%
+		&__img
+			display: inline-block
+			vertical-align: top
+			max-width: 100%
+			width: 100%
+			// height: auto
+			height: 100%
+			object-fit: cover
+	&-text
+		margin-bottom: 35px
+		padding: 0 15px
+		width: 100%
+		text-align: center
+		font-family: $proxima
+		+fs(37)
+		font-weight: 600
+		color: #460d52

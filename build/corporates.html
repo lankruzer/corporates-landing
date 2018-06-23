@@ -8,11 +8,11 @@
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css"> </head>
-  <body>
+  <body id="start">
     <!-- begin header -->
     <header class="header">
       <div class="container">
-        <a href="#" class="header-logo">
+        <a href="#start" class="header-logo link-smooth-to">
           <img class="header-logo__img" src="img/header-logo.png" alt=""> </a>
         <button class="btn-mobile-menu">
           <span class="lines"></span>
@@ -24,10 +24,10 @@
                 <a href="#services" class="header-nav-list-li__link link-smooth-to">Услуги</a>
               </li>
               <li class="header-nav-list-li">
-                <a href="#gallery" class="header-nav-list-li__link link-smooth-to">Галерея</a>
+                <a href="#reviews" class="header-nav-list-li__link link-smooth-to">Отзывы</a>
               </li>
               <li class="header-nav-list-li">
-                <a href="#reviews" class="header-nav-list-li__link link-smooth-to">Отзывы</a>
+                <a href="#gallery" class="header-nav-list-li__link link-smooth-to">Галерея</a>
               </li>
             </ul>
           </nav>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="hero-video">
-          <video src="video/video.mp4" poster="img/video-poster.jpg" class="hero-video__video" autoplay muted loop></video>
+          <video src="video/video.mp4" class="hero-video__video" autoplay muted loop></video>
         </div>
       </section>
       <section class="screen screen-features">
@@ -119,10 +119,12 @@
           </p>
           <p>Это наша главная гарантия качества услуг!</p>
         </div>
+        <div class="cor-parralax-rellax">
+          <img src="img/cor-parll-1-2.jpg" alt=""> </div>
       </div>
       <!-- end cor-parralax -->
       <!-- begin screen screen-services-top -->
-      <div class="screen screen-services-top">
+      <div id="services" class="screen screen-services-top">
         <div class="container">
           <div class="service-top service-top_top">
             <h2 class="service-top__title">Корпоративы</h2>
@@ -150,7 +152,9 @@
             <h2 class="service-top__title">Тимбилдинги</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
-              <button class="btn btn-open-app" type="button">Оставить заявку</button>
+              <button class="btn btn-open-app" type="button">
+                <span class="btn__content">Оставить заявку</span>
+              </button>
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-3.jpg" alt="" class="service-top-img__img"> </div>
@@ -158,7 +162,6 @@
           <div class="service-top-text">У нас
             <span class="bold">огромный опыт</span> в огранизации корпоративных мероприятий</div>
           <div class="service-top service-top_bottom">
-            <h2 class="service-top__title">Концерты и фестивали</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
               <button class="btn btn-open-app" type="button">
@@ -167,9 +170,9 @@
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-4.jpg" alt="" class="service-top-img__img"> </div>
+            <h2 class="service-top__title">Концерты и фестивали</h2>
           </div>
           <div class="service-top service-top_bottom">
-            <h2 class="service-top__title">Выставки</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
               <button class="btn btn-open-app" type="button">
@@ -178,9 +181,9 @@
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-5.jpg" alt="" class="service-top-img__img"> </div>
+            <h2 class="service-top__title">Выставки</h2>
           </div>
           <div class="service-top service-top_bottom">
-            <h2 class="service-top__title">Социальные проекты</h2>
             <div class="service-top-overlay">
               <div class="service-top-overlay__text">от 18 руб/чел</div>
               <button class="btn btn-open-app" type="button">
@@ -189,6 +192,7 @@
             </div>
             <div class="service-top-img">
               <img src="img/cor-service-6.jpg" alt="" class="service-top-img__img"> </div>
+            <h2 class="service-top__title">Социальные проекты</h2>
           </div>
         </div>
       </div>
@@ -250,7 +254,7 @@
       </section>
       <!-- end cor-parralax -->
       <!-- begin screen screen-reviews -->
-      <section class="screen screen-reviews">
+      <section id="reviews" class="screen screen-reviews">
         <div class="container">
           <h2 class="screen-title">Отзывы</h2>
           <div class="slider-reviews">
@@ -325,7 +329,7 @@
       </section>
       <!-- end screen screen-reviews -->
       <!-- begin screen screen-gallery -->
-      <section class="screen screen-gallery">
+      <section id="gallery" class="screen screen-gallery">
         <div class="container">
           <h2 class="screen-title">Все наши праздники
             <span class="bold">вне конкуренции,</span> убедитесь сами:</h2>
