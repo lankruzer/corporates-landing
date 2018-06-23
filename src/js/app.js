@@ -26,6 +26,7 @@ $('.slider-reviews').slick({
   dots: true,
   centerMode: true,
   variableWidth: true,
-  speed: 0
+  speed: 0,
+  focusOnSelect: true
 });
 

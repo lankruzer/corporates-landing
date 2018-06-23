@@ -2,6 +2,31 @@
 	&__container
 		padding: 0!important
 
+	.slick-dots
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		margin: 35px auto 0
+		li
+			margin: 5px
+			button
+				display: inline-block
+				vertical-align: middle
+				width: 13px
+				height: 13px
+				+fs(0)
+				background-color: #907f8f
+				border-radius: 50%
+				overflow: hidden
+				transition: .25s
+			&:not(.slick-active):hover
+				button
+					background-color: darken(#907f8f, 20)
+			&.slick-active
+				button
+					background-color: #221236
+
 .slider-reviews
 	&__slide-wrapper
 		box-sizing: border-box
@@ -49,7 +74,7 @@
 					left: 15px
 					right: 15px
 				width: perc(655, 655 - 295)
-				+fs(14)
+				+fs(16)
 				&__names,
 				&__info
 					text-align: center
