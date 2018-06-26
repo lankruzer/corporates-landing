@@ -16,6 +16,7 @@
   },
   "authors": "Coderiver <html@coderiver.com.ua>",
   "devDependencies": {
+    "air-datepicker": "^2.2.3",
     "autoprefixer": "^8.3.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",
@@ -53,6 +54,7 @@
     "gulp-util": "^3.0.7",
     "htmlhint": "^0.9.13",
     "husky": "^0.14.3",
+    "inputmask": "^4.0.0",
     "jquery": "^3.3.1",
     "jquery-mousewheel": "^3.1.13",
     "lint-staged": "^7.0.4",

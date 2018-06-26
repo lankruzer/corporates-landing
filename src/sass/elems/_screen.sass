@@ -1,5 +1,11 @@
 .screen
 	padding: 45px 0 75px
+	+r(1200)
+		padding: 35px 0 65px
+	+r(1000)
+		padding: 25px 0 45px
+	+r(900)
+		padding: 20px 0 40
 	&-title
 		margin: 0 auto 60px
 		padding-bottom: 10px
@@ -9,8 +15,19 @@
 		+fs(33)
 		font-weight: 600
 		color: $blue-dark
+		+r(1200)
+			margin-bottom: 40px
+			+fs(30)
+		+r(1000)
+			+fs(26)
+			margin-bottom: 30px
+		+r(900)
+			margin-bottom: 20px
+			+fs(24)
+		+r(700)
+			+fs(22)
 		&__content
-			display: inline
+			display: inline-block
 			vertical-align: middle
 			+pseudo
 			&::before
@@ -19,3 +36,5 @@
 				height: 4px
 				+g(#3d163b, #872c4c)
 				opacity: .25
+				+r(1200)
+					height: 3px

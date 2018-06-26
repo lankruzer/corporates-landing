@@ -8,6 +8,10 @@
 		justify-content: center
 		align-items: center
 		margin: 35px auto 0
+		+r(1200)
+			margin: 25px auto 0
+		+r(900)
+			margin-top: 10px
 		li
 			margin: 5px
 			button
@@ -20,6 +24,9 @@
 				border-radius: 50%
 				overflow: hidden
 				transition: .25s
+				+r(1200)
+					width: 10px
+					height: 10px
 			&:not(.slick-active):hover
 				button
 					background-color: darken(#907f8f, 20)
@@ -34,9 +41,15 @@
 	&-slide
 		display: flex
 		background-color: $light
+		+r(500)
+			flex-wrap: wrap
 		&-img
 			width: 100%
 			// height: 100%
+			+r(700)
+				width: 50%
+			+r(500)
+				width: 100%
 			img
 				display: inline-block
 				vertical-align: middle
@@ -64,8 +77,13 @@
 			.slider-reviews-slide-text
 				width: 0
 				+fs(0)
+				+r(700)
+					box-sizing: border-box
+					padding: 15px
+					width: 100%
+					+fs(16)
 		&.slick-center
-			width: 700 + px
+			width: 700px
 			.slider-reviews-slide-img
 				width: perc(655, 295)
 			.slider-reviews-slide-text
@@ -75,6 +93,8 @@
 					right: 15px
 				width: perc(655, 655 - 295)
 				+fs(16)
+				+r(1200)
+					+fs(14)
 				&__names,
 				&__info
 					text-align: center

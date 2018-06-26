@@ -1,9 +1,16 @@
 .screen-services-top
 	padding: 85px 0 15px
+	+r(1200)
+		padding: 65px 0 10px
+	+r(1000)
+		padding: 45px 0 5px
+	+r(900)
+		padding: 40px 0 0
 	.container
 		padding: 0
 		display: flex
 		flex-wrap: wrap
+		justify-content: center
 
 
 .service-top
@@ -13,6 +20,17 @@
 	padding: 0 15px
 	width: calc(100% / 3)
 	overflow: hidden
+	+r(1200)
+		margin-bottom: 25px
+	+r(1000)
+		margin-bottom: 15px
+	+r(800)
+		margin-bottom: 10px
+		padding: 0 5px
+	+r(620)
+		width: calc(100% / 2)
+	+r(400)
+		width: 100%
 	&-overlay
 		position: absolute
 		top: 0
@@ -25,6 +43,9 @@
 		height: 100%
 		background-color: rgba($purp-light, .6)
 		transition: .25s
+		+r(800)
+			left: 5px
+			width: calc(100% - 10px)
 		&__text
 			margin-bottom: 10px
 			text-align: center
@@ -32,9 +53,22 @@
 			+fs(28)
 			font-weight: 400
 			color: $light
+			+r(1200)
+				+fs(24)
+			+r(1000)
+				margin-bottom: 5px
+				+fs(20)
+			+r(800)
+				+fs(18)
 		.btn
 			width: calc(100% - 20px)
 			+fs(26)
+			+r(1200)
+				+fs(20)
+			+r(1000)
+				+fs(18)
+			+r(800)
+				+fs(16)
 	&_top
 		.service-top-overlay
 			transform: translateY(-100%)
@@ -46,6 +80,8 @@
 		flex-direction: column
 		.service-top-overlay
 			transform: translateY(+100%)
+		+r(620)
+			flex-direction: column-reverse
 		&:hover
 			.service-top-overlay
 				transform: translateY(0%)
@@ -61,6 +97,17 @@
 		text-transform: uppercase
 		color: $light
 		background-color: $purp
+		+r(1200)
+			+fs(20)
+		+r(1000)
+			+fs(18)
+		+r(900)
+			+fs(15)
+		+r(800)
+			display: flex
+			justify-content: center
+			align-items: center
+			min-height: 68px
 	&-img
 		display: block
 		width: 100%
@@ -82,3 +129,16 @@
 		+fs(37)
 		font-weight: 600
 		color: #460d52
+		+r(1200)
+			margin-bottom: 25px
+			+fs(30)
+		+r(1000)
+			margin-bottom: 15px
+			+fs(26)
+		+r(900)
+			+fs(24)
+		+r(800)
+			margin-bottom: 10px
+			+fs(21)
+		+r(620)
+			order: -1

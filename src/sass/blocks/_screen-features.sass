@@ -1,10 +1,15 @@
 .features
 	&-row
 		display: flex
+		+r(700)
+			flex-wrap: wrap
 	&-col
 		display: flex
 		flex-direction: column
 		box-sizing: border-box
+		+r(700)
+			width: 100%
+			// flex-wrap: wrap
 		&_img
 			overflow: hidden
 			img
@@ -19,6 +24,23 @@
 			+fs(22)
 			font-weight: 300
 			color: $dark
+			+r(1200)
+				padding: 20px
+				+fs(20)
+			+r(1000)
+				padding: 15px
+				+fs(18)
+			+r(900)
+				min-height: 160px
+				padding: 10px
+				+fs(16)
+			+r(800)
+				min-height: 150px
+				+fs(15)
+			+r(700)
+				min-height: 100px
+				text-align: center
+				+fs(16)
 			.bold
 				display: contents
 		&_hero
@@ -34,6 +56,21 @@
 			+image('cor-gradient-bg.jpg')
 			+cover
 			+pseudo
+			+r(1200)
+				padding: 20px
+				+fs(22)
+			+r(1000)
+				padding: 15px
+				+fs(20)
+			+r(900)
+				padding: 10px
+				+fs(18)
+			+r(800)
+				+fs(16)
+			+r(700)
+				padding: 15px
+				min-height: 180px
+				+fs(18)
 			&-content
 				position: relative
 				z-index: 2
@@ -45,11 +82,56 @@
 				background-color: rgba($purp-dark, .7)
 		&_47
 			width: 47%
+			+r(700)
+				width: 50%
+			+r(400)
+				flex-wrap: wrap
+				width: 100%
 		&_43
 			width: 43%
+			+r(700)
+				width: 100%
+			+r(400)
+				flex-wrap: wrap
 		&_29
 			width: 29%
+			+r(700)
+				flex-direction: row
+				&.mobile-hidden
+					display: none
+				.features-col_text
+					width: 50%
+				.features-col_img
+					order: -1
+					width: 50%
+			+r(400)
+				width: 100%
+				flex-wrap: wrap
+				.features-col_text
+					width: 100%
+				.features-col_img
+					order: -1
+					width: 100%
+
 		&_28
 			width: 28%
+			+r(700)
+				flex-direction: row
+				.features-col_text
+					width: 50%
+				.features-col_img
+					width: 50%
+			+r(400)
+				flex-wrap: wrap
+				width: 100%
+				.features-col_text
+					width: 100%
+				.features-col_img
+					order: -1
+					width: 100%
 		&_24
 			width: 24%
+			+r(700)
+				width: 50%
+			+r(400)
+				width: 100%

@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <a href="#start" class="header-logo link-smooth-to">
-          <img class="header-logo__img" src="img/header-logo.png" alt=""> </a>
+          <img class="header-logo__img" src="img/header-logo-1.png" alt=""> </a>
         <button class="btn-mobile-menu">
           <span class="lines"></span>
         </button>
@@ -79,7 +79,7 @@
               <div class="features-col features-col_24 features-col_text"> Мы разрабатываем и реализовываем
                 <span class="bold">самые смелые проекты</span>
               </div>
-              <div class="features-col features-col_29 features-col_img">
+              <div class="features-col features-col_29 features-col_img mobile-hidden">
                 <img src="img/cor-feature-2.jpg" alt=""> </div>
             </div>
             <div class="features-row">
@@ -416,10 +416,10 @@
       </div>
       <!-- begin screen-map -->
       <div class="screen-map">
-        <div class="screen-map__map"></div>
+        <div id="map"></div>
         <div class="screen-map-contacts">
           <div class="container">
-            <div class="screen-map-contacts__contacts"> Контактные данные компании </div>
+            <address class="screen-map-contacts__contacts"> Контактные данные компании </address>
             <a href="tel:+375293600909" class="screen-map-contacts__tel">Тел.: +375(29)360-09-09</a>
             <button class="btn btn-open-call">
               <span class="btn__content">Заказать звонок</span>
@@ -437,24 +437,24 @@
           <img src="img/footer-logo.png" alt=""> </a>
         <ul class="footer-soc">
           <li class="footer-soc-li">
-            <a class="footer-soc-li__link">
-              <img src="" alt=""> fb </a>
+            <a href="#" class="footer-soc-li__link" target="_blank">
+              <img src="img/icon-fb.png" alt=""> </a>
           </li>
           <li class="footer-soc-li">
-            <a class="footer-soc-li__link">
-              <img src="" alt=""> g+ </a>
+            <a href="#" class="footer-soc-li__link" target="_blank">
+              <img src="img/icon-g.png" alt=""> </a>
           </li>
           <li class="footer-soc-li">
-            <a class="footer-soc-li__link">
-              <img src="" alt=""> im </a>
+            <a href="#" class="footer-soc-li__link" target="_blank">
+              <img src="img/icon-im.png" alt=""> </a>
           </li>
           <li class="footer-soc-li">
-            <a class="footer-soc-li__link">
-              <img src="" alt=""> ok </a>
+            <a href="#" class="footer-soc-li__link" target="_blank">
+              <img src="img/icon-ok.png" alt=""> </a>
           </li>
           <li class="footer-soc-li">
-            <a class="footer-soc-li__link">
-              <img src="" alt=""> yb </a>
+            <a href="#" class="footer-soc-li__link" target="_blank">
+              <img src="img/icon-yb.png" alt=""> </a>
           </li>
         </ul>
         <nav class="footer-nav">
@@ -483,8 +483,10 @@
           </ul>
         </nav>
         <div class="footer-copy">
-          <a class="footer-copy-qlab">
-            <img src="img/qlab-logo-white.png" alt=""> </a> © Copyright Qlab 2018 </div>
+          <a class="footer-copy__qlab">
+            <img src="img/qlab-logo-white.png" alt=""> </a>
+          <div class="footer-copy__text"> © Copyright Qlab 2018 </div>
+        </div>
       </div>
     </footer>
     <!-- end footer -->
@@ -494,15 +496,42 @@
         <span class="lines"></span>
       </button>
       <div class="overlay-content">
-        <form action="#" method="post" class="overlay-content-form">
-          <div class="overlay-content-form__title"></div>
-          <button class="btn btn-submit">Отправить</button>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-call">
+          <div class="overlay-content-form__title">Оставьте номер телефона, и мы свяжемся с Вами</div>
+          <input type="text" name="name" class="input" placeholder="Введите имя">
+          <input type="tel" name="tel" class="input" placeholder="Введите номер телефона*" required>
+          <textarea name="message" class="input" placeholder="Оставьте сообщение"></textarea>
+          <button class="btn btn-submit">
+            <span class="btn__content">Отправить</span>
+          </button>
+        </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-app">
+          <div class="overlay-content-form__title">Оставьте заявку и получите эксклюзивное предложение!</div>
+          <input type="text" name="name" class="input" placeholder="Введите имя">
+          <input type="tel" name="tel" class="input" placeholder="Введите номер телефона*" required>
+          <textarea name="message" class="input" placeholder="Оставьте сообщение"></textarea>
+          <button class="btn btn-submit">
+            <span class="btn__content">Отправить</span>
+          </button>
+        </form>
+        <form action="#" method="post" class="overlay-content-form overlay-content-form-calabration">
+          <div class="overlay-content-form__title">Оставьте заявку и мы с Вами свяжемся!</div>
+          <!-- <input type='text' class="datepicker-here" data-position="right top" /> -->
+          <!-- <input type="text" name="name" class="input" placeholder="Введите имя"> -->
+          <input type="text" name="date" class="input input-date" placeholder="Выберите дату">
+          <input type="tel" name="tel" class="input" placeholder="Введите номер телефона*" required>
+          <textarea name="message" class="input" placeholder="Оставьте сообщение"></textarea>
+          <button class="btn btn-submit">
+            <span class="btn__content">Отправить</span>
+          </button>
         </form>
       </div>
     </div>
-    <!-- end overlay -->
+    <!-- end overlay
+
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <!-- END scripts -->
   </body>
 </html>

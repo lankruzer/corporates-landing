@@ -1,10 +1,17 @@
 .cor-parralax
-	position: relative
 	padding: 120px 0
 	text-align: center
 	background: $purp
 	overflow: hidden
 	+pseudo
+	+r(1200)
+		padding: 90px 0
+	+r(1000)
+		padding: 60px 0
+	+r(900)
+		padding: 50px 0
+	+r(800)
+		padding: 40px 0
 	&::before
 		top: 0
 		left: 0
@@ -16,8 +23,22 @@
 		font-family: $proxima
 		+fs(40)
 		font-weight: 400
+		+r(1200)
+			+fs(30)
+		+r(1000)
+			+fs(24)
+		+r(900)
+			+fs(22)
+		+r(800)
+			+fs(20)
 		p:not(:last-of-type)
 			margin-bottom: 30px
+			+r(1200)
+				margin-bottom: 20px
+			+r(900)
+				margin-bottom: 15px
+			+r(800)
+				margin-bottom: 10px
 		.cor-parralax-rellax
 			+image('cor-parll-1-2.jpg')
 	&_bottom
@@ -28,25 +49,74 @@
 				+fs(36)
 				font-weight: 600
 				color: $light
+				+r(1200)
+					margin-bottom: 25px
+					+fs(30)
+				+r(1000)
+					margin-bottom: 20px
+					+fs(28)
+				+r(900)
+					+fs(26)
+				+r(800)
+					+fs(24)
+				+r(600)
+					+fs(22)
 			&-list
 				margin: 0 auto 40px
 				width: 60%
 				text-align: left
 				list-style-type: decimal 
+				+r(1200)
+					margin-bottom: 30px
+					width: 70%
+				+r(1000)
+					margin-bottom: 25px
+					width: 80%
+				+r(400)
+					box-sizing: border-box
+					padding-left: 15px
+					width: 100%
 				&__li
 					margin-bottom: 20px
 					+fs(22)
 					font-weight: 400
+					+r(1200)
+						margin-bottom: 15px
+						+fs(20)
+					+r(1000)
+						margin-bottom: 10px
+						+fs(18)
+					+r(600)
+						+fs(16)
 			&-rellax
 				top: 0
 				min-height: 250%
 				+image('cor-parll-2-2.jpg')
+				+r(700)
+					top: 0!important
+					min-height: 350%
 			&__text
 				+fs(33)
 				font-weight: 600
+				+r(1200)
+					+fs(26)
+				+r(1000)
+					+fs(24)
+				+r(900)
+					+fs(22)
+				+r(800)
+					+fs(20)
+				+r(600)
+					+fs(18)
 		.btn
 			margin-bottom: 50px
 			min-width: 340px
+			+r(1200)
+				margin-bottom: 40px
+				min-width: 300px
+			+r(1000)
+				margin-bottom: 30px
+
 
 	.container
 		position: relative
@@ -62,6 +132,10 @@
 	text-align: center
 	+cover
 	background-position: center
+	+r(1000)
+		min-height: 300%
+	+r(700)
+		top: 25%
 	img
 		display: inline-block
 		vertical-align: middle

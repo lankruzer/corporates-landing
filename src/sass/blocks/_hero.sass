@@ -2,6 +2,10 @@
 	position: relative
 	margin-top: 90px
 	display: flex
+	+r(1200)
+		margin-top: 80px
+	+r(1000)
+		margin-top: 60px
 	&-content
 		position: relative
 		z-index: 2
@@ -11,6 +15,10 @@
 		width: 100%
 		min-height: calc(100vh - 90px)
 		margin: auto auto 0
+		+r(1200)
+			min-height: calc(100vh - 80px)
+		+r(1000)
+			min-height: calc(100vh - 60px)
 		&__title
 			box-sizing: border-box
 			padding: 35px 0
@@ -19,19 +27,52 @@
 			+fs(50)
 			font-weight: 700
 			color: $light
+			+r(1200)
+				padding: 25px 0
+				+fs(40)
+			+r(1000)
+				padding: 15px 0
+				+fs(34)
+			+r(900)
+				padding: 75px 0 15px
+				+fs(32)
+			+r(800)
+				+fs(30)
+			+r(700)
+				width: 80%
+				+fs(26)
+			+r(600)
+				width: 100%
+			+r(400)
+				+fs(20)
 		&-form
 			padding: 20px 0 30px
 			width: 100%
 			background-color: rgba($purp-dark, .7)
+			+r(1200)
+				padding: 15px 0 25px
+			+r(1000)
+				padding: 10px 0 20px
+			+r(900)
+				padding: 10px 0 15px
 			&__text
 				display: block
 				margin-bottom: 10px
-				// text-align: center
 				font-family: $proxima
 				+fs(30)
 				font-weight: 600
 				color: $light
-
+				+r(1200)
+					+fs(26)
+				+r(1000)
+					+fs(22)
+				+r(900)
+					+fs(20)
+				+r(800)
+					margin-bottom: 5px
+					+fs(18)
+				+r(700)
+					+fs(16)
 	&-video
 		position: absolute
 		top: 0
@@ -65,8 +106,30 @@
 .hero-form
 	display: flex
 	justify-content: space-between
+	+r(700)
+		flex-wrap: wrap
 	& > *
 		flex: 1
 		margin-right: 30px
+		+r(900)
+			margin-right: 15px
+		+r(700)
+			flex: auto
+			margin-right: 0
+			width: calc(50% - 10px)
+		+r(400)
+			margin: 0 0 10px
+			width: 100%
+		&.input
+			margin-bottom: 10px
+			height: 35px
+			&:not(:last-of-type)
+				margin-right: 10px
+				+r(400)
+					margin-right: 0
 	.btn
 		margin-right: 0
+		+r(700)
+			width: 100%
+			padding: 0
+			line-height: 35px

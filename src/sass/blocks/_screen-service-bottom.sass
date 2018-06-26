@@ -1,5 +1,11 @@
 .screen-service-bottom
 	padding-bottom: 45px
+	+r(1200)
+		padding-bottom: 35px
+	+r(1000)
+		padding-bottom: 25px
+	+r(900)
+		padding-bottom: 20px
 	&__wrapper
 		display: flex
 		justify-content: center
@@ -11,7 +17,18 @@
 		padding: 0 25px
 		width: calc(100% / 3)
 		text-align: center
-
+		+r(1200)
+			margin-bottom: 50px
+			padding: 0 20px
+		+r(1000)
+			margin-bottom: 40px
+			padding: 0 10px
+		+r(900)
+			margin-bottom: 30px
+		+r(700)
+			width: calc(100% / 2)
+		+r(400)
+			width: 100%
 .service-bottom
 	&-img
 		display: flex
@@ -25,6 +42,19 @@
 		border-radius: 50%
 		overflow: hidden
 		background-color: $pink
+		+r(1200)
+			margin-bottom: 15px
+			width: 110px
+			height: 110px
+		+r(1000)
+			margin-bottom: 10px
+			width: 90px
+			height: 90px
+		+r(900)
+			margin-bottom: 5px
+			padding: 15px
+			width: 70px
+			height: 70px
 		&__img
 			display: inline-block
 			vertical-align: middle
@@ -38,3 +68,7 @@
 		+fs(22)
 		font-weight: 300
 		color: $blue-dark
+		+r(1200)
+			+fs(18)
+		+r(1000)
+			+fs(16)

@@ -1,0 +1,115 @@
+.footer
+	padding: 25px 0 15px
+	background-color: $purp
+	+r(900)
+		padding: 20px 0 15px
+	.container
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-end
+	&-logo
+		margin-left: 0
+		margin-right: auto
+		+r(1200)
+			max-width: 240px
+		+r(900)
+			max-width: 200px
+		+r(700)
+			max-width: 180px
+		+r(600)
+			max-width: 150px
+		+r(500)
+			margin: 0 auto 25px
+			width: 100%
+			max-width: 120px
+			text-align: center
+		img
+			display: inline-block
+			max-width: 100%
+	&-soc
+		display: flex
+		flex-wrap: wrap
+		margin: auto 75px 0 0
+		+r(1200)
+			margin-right: 55px
+		+r(900)
+			margin-top: 5px
+			margin-right: 50px
+			flex-direction: column
+		+r(700)
+			margin-right: 40px
+		+r(600)
+			margin-right: 25px
+		+r(500)
+			margin-top: 25px
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			order: 2
+			width: 100%
+		&-li
+			margin-left: 13px
+			+r(900)
+				margin-bottom: 8px
+			&__link
+				display: inline-block
+				vertical-align: middle
+				width: 41px
+				+fs(0)
+				+r(500)
+					width: 30px
+				&:hover
+					text-decoration: none
+				img
+					display: inline-block
+					width: 100%
+					height: auto
+	&-nav
+		+r(500)
+			order: 1
+			width: 100%
+		&-list
+			&-li
+				&:not(:last-of-type)
+					margin-bottom: 10px
+					+r(1200)
+						margin-bottom: 7px
+				+r(500)
+					text-align: center
+				&__link
+					display: inline-block
+					font-family: $proxima
+					+fs(18)
+					font-weight: 400
+					color: $light
+					text-decoration: none
+					transition: .25s
+					+r(1200)
+						+fs(16)
+					&:hover
+						color: $pink
+						text-decoration: underline
+	&-copy
+		margin-top: 60px
+		width: 100%
+		text-align: center
+		+fs(18)
+		color: $light
+		+r(900)
+			margin-top: 40px
+		+r(600)
+			margin-top: 30px
+		+r(500)
+			order: 10
+		&__qlab
+			display: inline-block
+			vertical-align: middle
+			margin-right: 20px
+			+r(1200)
+				max-width: 50px
+				margin-right: 10px
+			img
+				max-width: 100%
+		&__text
+			display: inline-block
+			vertical-align: middle

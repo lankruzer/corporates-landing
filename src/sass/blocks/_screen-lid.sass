@@ -1,0 +1,70 @@
+.screen-lid
+	padding: 75px 0 85px
+	+pseudo
+	+image('cor-gradient-bg.jpg')
+	+cover
+	+r(1200)
+		padding: 45px 0 55px
+	+r(1000)
+		padding: 35px 0 45px
+	+r(900)
+		padding: 30px 0 40px
+	&::before
+		z-index: 1
+		+coverdiv
+		background-color: rgba($purp-dark, .7)
+	.container 
+		position: relative
+		z-index: 2
+		text-align: center
+		color: $light
+	&__title
+		margin: 0 auto 40px
+		text-align: center
+		font-family: $proxima
+		+fs(36)
+		font-weight: 600
+		color: $light
+		+r(1200)
+			margin-bottom: 25px
+			+fs(30)
+		+r(1000)
+			margin-bottom: 20px
+			+fs(26)
+		+r(900)
+			margin-bottom: 15px
+			+fs(24)
+		+r(800)
+			+fs(22)
+		+r(400)
+			+fs(20)
+	.btn
+		margin-bottom: 40px
+		min-width: 345px
+		+r(1200)
+			margin-bottom: 25px
+			min-width: 310px
+		+r(1000)
+			margin-bottom: 20px
+		+r(800)
+			padding-left: 15px
+			padding-right: 15px
+			min-width: auto
+	&__text
+		margin: 0 auto
+		width: 60%
+		text-align: center
+		+fs(30)
+		font-weight: 400
+		+r(1200)
+			width: 70%
+			+fs(24)
+		+r(1000)
+			+fs(22)
+		+r(900)
+			+fs(20)
+		+r(800)
+			+fs(18)
+		+r(400)
+			width: 100%
+
